@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;800&display=swap" rel="stylesheet">
+    <title>家常TRY！｜ YomYom Game</title>
+    <link rel="stylesheet" href="style-game.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="home.html"><img src="images/logo.png" alt="Home" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="recipe.html">RECIPE</a></li>
+                    <li><a href="game.html">GAME</a></li>
+                    <li><a href="share.html">SHARE</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="note">
+            <h1>YomYom Village</h1>
+            <p>玩法：使用 A, D, W, D （左、右、上、下）來控制小朋友去看一看農產吧！</p>
+            <center>
+                <div class="button">
+                    <a href="#game"> <button onmousedown="sound.play()" class="smallbutton">PLAY!</button></a>
+                </div>
+            </center>
+        </div>
+    </div>
+
+    <div class="container-2" id="game">
+        <div class="gameSpace">
+            <div class="bg-game">
+                <canvas></canvas>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" 
+                integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                ></script>        
+                <script src="./data/audio.js"></script>
+                <script src="data/collisions.js"></script>
+                <script src="classes.js"></script>
+                <script src="game.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container3">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>GET HELP</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Notices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <ul>
+                        <li>Phone: 090443388</li>
+                        <li>Email: trycompany@gmail.com</li>
+                        <li>Address: No. 135, Yuandong Rd., Zhongli Dist., Taoyuan City 320315 , Taiwan (R.O.C.)</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>THANK YOU FOR YOUR VISIT!</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
